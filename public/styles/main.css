@@ -23,6 +23,9 @@ h1,h2{
 h2{
   font-size: 3rem;
 }
+
+img{
+width: 100%;}
 /*****************************CLASSES*********************************/
 
 
@@ -90,25 +93,29 @@ h2{
 .about-div{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /*grid-template-columns: minmax(660px,1fr) minmax(600px,1fr);*/
+  column-gap: 50px;
 }
 
 .grid-item-content{
 
 }
 
-.grid-item-image{
 
-}
 
 /****************************IDS*********************************/
 
-#h1-div,.grid-item-content{
+#h1-div,.grid-item-content,.grid-item-image{
   align-content: center;
   border: solid 0.5px black;
   padding: 0 40px;
 }
 
-#about-section{
-  margin-top: 80px;
+/*used padding 0px for grid-item-image below the previous one for priority purposes*/
+.grid-item-image{
+  padding: 0px;
+  border: solid 0.5px black;
 }
+
+
 /****************************MEDIA*********************************/
