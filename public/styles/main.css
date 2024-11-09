@@ -9,10 +9,19 @@ hr{
     border: solid 0.5px black;
 }
 
-h1{
+p{
+  margin: 0;
+}
+
+h1,h2{
+  text-align: center;
     align-content: center;
     font-size: 5rem;
     margin: 0;
+}
+
+h2{
+  font-size: 3rem;
 }
 /*****************************CLASSES*********************************/
 
@@ -39,7 +48,7 @@ h1{
   }
 
   .nav-bar{
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
 .logo{
@@ -56,23 +65,50 @@ h1{
 .small-width-square{
   text-align: center;
   align-content: center;
-  width: 100px;
+  width: 135px;
 }
+
+
 
 .custom-link{
   text-decoration: none;
+  background-color: transparent; /* Initial color */
   color: black;
+  transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+  padding: 5px;
+}
+
+.custom-link:hover{
+  background-color: black; /* Target color on hover */
+  color: white;
 }
 
 .red-color{
   color: red;
 }
 
+.about-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-item-content{
+
+}
+
+.grid-item-image{
+
+}
+
 /****************************IDS*********************************/
 
-#h1-div{
+#h1-div,.grid-item-content{
   align-content: center;
   border: solid 0.5px black;
   padding: 0 40px;
+}
+
+#about-section{
+  margin-top: 80px;
 }
 /****************************MEDIA*********************************/
