@@ -10,7 +10,7 @@ const app = express();
 //declare a port to use for the server
 const port = 3000;
 
-//using express.static to assign the public folder as the images and styles folder
+//using express.static to assign the public folder as the images and stylesfolder
 app.use(express.static("public"));
 
 

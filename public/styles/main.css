@@ -39,7 +39,7 @@ h1{
   }
 
   .nav-bar{
-    
+    justify-content: space-around;
   }
 
 .logo{
@@ -59,6 +59,14 @@ h1{
   width: 100px;
 }
 
+.custom-link{
+  text-decoration: none;
+  color: black;
+}
+
+.red-color{
+  color: red;
+}
 
 /****************************IDS*********************************/
 
