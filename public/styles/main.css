@@ -13,7 +13,7 @@ p{
   margin: 0;
 }
 
-h1,h2{
+h1,h2,.subtitle-text{
   text-align: center;
     align-content: center;
     font-size: 5rem;
@@ -26,6 +26,7 @@ h2{
 
 img{
 width: 100%;}
+
 /*****************************CLASSES*********************************/
 
 
@@ -73,7 +74,7 @@ width: 100%;}
 
 
 
-.custom-link{
+.custom-link,.wide-bg-btn{
   text-decoration: none;
   background-color: transparent; /* Initial color */
   color: black;
@@ -98,10 +99,33 @@ width: 100%;}
 }
 
 .grid-item-content{
-
+text-align: center;
+align-content: center;
 }
 
+.subtitle-text{
+  font-size: 2rem;
+  margin: 10% 0;
+}
 
+.gray-img-effect{
+  filter: grayscale(100%);
+}
+
+.wide-bg-btn-div{
+background-color: rgb(153, 0, 0);
+margin: 0 0.2rem;
+padding: 20px;
+transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+}
+
+.wide-bg-btn-div:hover{
+  background-color: black; /* Target color on hover */
+}
+
+.wide-bg-btn{
+  color: white;
+}
 
 /****************************IDS*********************************/
 
