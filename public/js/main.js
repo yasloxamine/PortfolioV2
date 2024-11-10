@@ -1,5 +1,5 @@
 
-//initialized and typed object from a typed class for text typing animation
+//initialized a typed object from a Typed module for text typing animation
 var typed = new Typed('#animatedSubtitleTyping', {
     strings: ['ORGANISATION.', 'PROJECT.','COMPANY.','EDUCATION.'],
     typeSpeed: 100,
