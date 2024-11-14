@@ -202,4 +202,46 @@ img {
   background-blend-mode: multiply;
 }
 
+#technical-skills-section{
+  margin-top: 20px;
+}
+
+.roadmap{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  margin: 100px 80px 20px;
+  height: 5px;
+}
+
+.roadmap-square{
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  /*border: solid 1px black;*/
+  position: relative;
+  bottom: 23px;
+  padding: 5px;
+  border-radius: 0.5rem;
+  transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+}
+
+.roadmap-square:hover{
+  background-color: rgb(153, 0, 0);
+}
+
+.roadmap-head{
+  width: 60px;
+  height: 60px;
+  position: relative;
+  bottom: 27px;
+  left: 20px;
+}
+
+.roadmap>.roadmap-square>img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
 /****************************MEDIA*********************************/
