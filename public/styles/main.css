@@ -203,6 +203,7 @@ img {
 }
 
 #technical-skills-section{
+  text-align: center;
   margin-top: 20px;
 }
 
@@ -266,6 +267,10 @@ img {
   height: 105px;
   width: 5px;
   background-color: black;
+}
+
+#technical-skills-section>hr{
+  margin: 40px 135px 0px 210px;
 }
 
 /****************************MEDIA*********************************/
