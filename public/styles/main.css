@@ -270,7 +270,7 @@ img {
 }
 
 #technical-skills-section>hr{
-  margin: 40px 135px 0px 210px;
+  margin: 40px 220px 0px 200px;
 }
 
 #technical-skills-section>.subtitle-text{
@@ -305,6 +305,9 @@ span>.roadmap-square{
   background-color: black;
 }
 
+.black-bg{
+  background-color: black;
+}
 
 /****************************KEYFRAMES*********************************/
 
