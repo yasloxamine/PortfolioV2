@@ -91,7 +91,7 @@ img {
 }
 
 .about-div,
-.contact-div {
+.contact-div{
   display: grid;
   grid-template-columns: 1fr 1fr;
   /*grid-template-columns: minmax(660px,1fr) minmax(600px,1fr);*/
@@ -186,6 +186,10 @@ img {
 
 .grid-span2 {
   grid-column: span 2;
+}
+
+.grid-row-span2{
+  grid-row: span 2;
 }
 
 .grid-column-start-2 {
@@ -307,6 +311,18 @@ span>.roadmap-square{
 
 .black-bg{
   background-color: black;
+}
+
+#experience-section{
+  margin-top: 40px;
+}
+
+.experience-div{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr;
+  column-gap: 50px;
+  row-gap: 20px;
 }
 
 /****************************KEYFRAMES*********************************/

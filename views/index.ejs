@@ -20,11 +20,21 @@
     <title>YASLO MOHAMED AMINE, WEB/MOBILE DEV | GAME DESIGNER</title>
   </head>
   <body>
+
+    <%# including the header section from the header.ejs in partials folder%>
     <%- include("partials/header.ejs") %>
 
+    <%# including the about section from the aboutSection.ejs in partials folder %>
     <%- include("partials/aboutSection") %>
 
+    <%# including the technical skills section from the technicalSkillsSection.ejs in partials folder %>
     <%- include("partials/technicalSkillsSection") %>
+
+    <hr>
+    <%# including the experience section from the experienceSection.ejs in partials folder %>
+    <%- include("partials/experienceSection") %>
+
+
 
     <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
