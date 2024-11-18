@@ -367,6 +367,10 @@ span>.roadmap-square{
   width: 100%;
   background-size: cover;
 }
+
+#education-section>div:nth-of-type(2)>div>.sliding-div>.rectangle{
+  border: solid 0.5px white;
+}
 /****************************KEYFRAMES*********************************/
 
 @keyframes scrollText {
