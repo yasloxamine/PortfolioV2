@@ -313,7 +313,7 @@ span>.roadmap-square{
   background-color: black;
 }
 
-#experience-section{
+#experience-section,#education-section{
   margin-top: 40px;
 }
 
@@ -325,6 +325,48 @@ span>.roadmap-square{
   row-gap: 20px;
 }
 
+.sliding-img-container{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 40%;
+}
+
+/* Sliding div initial state */
+.sliding-div {
+  position: absolute;
+  bottom: -100%; /* Hide the sliding div below the container */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+  color: white; /* Text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: bottom 0.5s ease; /* Smooth slide effect */
+  padding: 10px; /* Add some padding inside the div */
+  box-sizing: border-box; /* Ensures padding doesn’t affect width/height */
+}
+
+/* Hover effect */
+.sliding-img-container:hover .sliding-div {
+  bottom: 0; /* Slide the div up into view */
+}
+
+#education-section>div:nth-of-type(2){
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+#education-section>div:nth-of-type(2)>div>img{
+  width: 100%;
+  background-size: cover;
+}
 /****************************KEYFRAMES*********************************/
 
 @keyframes scrollText {
