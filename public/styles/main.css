@@ -313,7 +313,7 @@ span>.roadmap-square{
   background-color: black;
 }
 
-#experience-section,#education-section{
+#experience-section,#education-section,#project-section{
   margin-top: 40px;
 }
 
@@ -370,7 +370,43 @@ span>.roadmap-square{
 
 #education-section>div:nth-of-type(2)>div>.sliding-div>.rectangle{
   border: solid 0.5px white;
+  height: 50%;
+  width: 60%;
 }
+
+.about-div>.rectangle,.experience-div>.quicksand>p,.project-flex>p,.project-flex-black>p{
+  text-align: justify;
+}
+
+.projects-div{
+  
+  border: solid 4px black;
+
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+.project-flex,.project-flex-black{
+  display: flex;
+  justify-content: space-around;
+  gap: 7%;
+  padding: 40px;
+}
+
+.project-flex-black{
+  background-color: black;
+  color: #f5efe6;
+  
+}
+
+.project-flex>img,.project-flex-black>img{
+ height: auto;
+ width: 350px;
+}
+
 /****************************KEYFRAMES*********************************/
 
 @keyframes scrollText {
