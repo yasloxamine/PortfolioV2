@@ -1,6 +1,6 @@
 /****************************TAGS*********************************/
 body {
-  margin: 40px;
+  margin: 0;
   background-color: #f5efe6;
 }
 hr {
@@ -278,7 +278,7 @@ img {
   margin: 40px 220px 0px 200px;
 }
 
-#technical-skills-section>.subtitle-text{
+#technical-skills-section>.subtitle-text,#footer-section{
   margin: 40px 0px 0px;
 }
 
@@ -314,8 +314,13 @@ span>.roadmap-square{
   background-color: black;
 }
 
-#experience-section,#education-section,#project-section{
-  margin-top: 40px;
+#experience-section,#education-section,#project-section,.header-bar{
+  margin: 40px 40px 0;
+}
+
+#about-section,#technical-skills-section,hr,.nav-bar{
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .experience-div{
@@ -379,7 +384,7 @@ span>.roadmap-square{
   text-align: justify;
 }
 
-.projects-div{
+.projects-div,#footer-flex{
   
   border: solid 4px black;
 
@@ -391,6 +396,7 @@ span>.roadmap-square{
 
 
 
+
 .project-flex,.project-flex-black{
   display: flex;
   justify-content: space-around;
@@ -399,7 +405,7 @@ span>.roadmap-square{
 }
 
 
-.project-flex-black{
+.project-flex-black,#footer-section{
   background-color: black;
   color: #f5efe6;
   
@@ -418,6 +424,12 @@ span>.roadmap-square{
 .project-flex>p>a{
   text-decoration: none;
 }
+
+
+#footer-flex{
+  border: none;
+}
+
 
 /****************************KEYFRAMES*********************************/
 
