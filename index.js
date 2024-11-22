@@ -12,6 +12,9 @@ const __dirname = path.dirname(__filename);
 // Create an express application
 const app = express();
 
+//declare a port to use for the server
+//const port = 3000; //for local testing
+
 // Set up EJS as the view engine
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views")); // Ensure the views folder is correctly located
@@ -28,4 +31,10 @@ app.get("/", (req, res) => {
 });
 
 // Export the app for Vercel
-export default app;
+export default app; //for vercel deployment
+
+
+//listening to the declared port locally
+//app.listen(port,()=>{
+//    console.log("Listening to the port : "+port);
+ //   });
