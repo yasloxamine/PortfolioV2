@@ -1,29 +1,31 @@
-//import express , axios and bodyparser modules 
+// Import express, axios, and body-parser modules
 import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
+import path from "path";
+import { fileURLToPath } from "url";
 
+// Resolve __dirname for ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-//create an express application and assign it's functions to a const app
+// Create an express application
 const app = express();
 
-//declare a port to use for the server
-//const port = 3000; the port declaration has been commented for serverless vercel deployment
+// Set up EJS as the view engine
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views")); // Ensure the views folder is correctly located
 
-//using express.static to assign the public folder as the images and styles folder
-app.use(express.static("public"));
+// Assign the public folder for static assets (CSS, images, etc.)
+app.use(express.static(path.join(__dirname, "public")));
 
+// Middleware to parse request bodies
+app.use(bodyParser.urlencoded({ extended: true }));
 
-//use the app.get to get the home '/' route and render the index.ejs
-app.get("/",(req,res)=>{
-res.render("index.ejs");
+// Define the home route
+app.get("/", (req, res) => {
+  res.render("index");
 });
 
-//listening to the declared port
-/*app.listen(port,()=>{
-console.log("Listening to the port : "+port);
-});*///same as the port , the app.listen being commented
-
-
-// Export the app as a Vercel serverless function
+// Export the app for Vercel
 export default app;
