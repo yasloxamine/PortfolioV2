@@ -8,7 +8,7 @@ import bodyParser from "body-parser";
 const app = express();
 
 //declare a port to use for the server
-const port = 3000;
+//const port = 3000; the port declaration has been commented for serverless vercel deployment
 
 //using express.static to assign the public folder as the images and styles folder
 app.use(express.static("public"));
@@ -20,6 +20,10 @@ res.render("index.ejs");
 });
 
 //listening to the declared port
-app.listen(port,()=>{
+/*app.listen(port,()=>{
 console.log("Listening to the port : "+port);
-});
+});*///same as the port , the app.listen being commented
+
+
+// Export the app as a Vercel serverless function
+export default app;
