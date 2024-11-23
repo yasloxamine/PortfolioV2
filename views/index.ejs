@@ -24,6 +24,9 @@
     <%# including the header section from the header.ejs in partials folder%>
     <%- include("partials/header.ejs") %>
 
+    <%# including the navigation bar from the navigationBar.ejs in partials folder%>
+    <%- include("partials/navigationBar.ejs") %>
+
     <%# including the about section from the aboutSection.ejs in partials folder %>
     <%- include("partials/aboutSection") %>
 
@@ -48,5 +51,8 @@
     <script type="module" src="/js/main.js"></script>
     <!-- Link to the frontend JavaScript -->
   </body>
+<footer>
+  <%- include("partials/footer.ejs") %>
 
+</footer>
 </html>

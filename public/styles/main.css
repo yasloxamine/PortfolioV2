@@ -50,10 +50,6 @@ img {
   justify-content: space-between;
 }
 
-.nav-bar {
-  justify-content: space-between;
-}
-
 .logo {
   height: 170px;
   width: 100%;
@@ -318,7 +314,7 @@ span>.roadmap-square{
   margin: 40px 40px 0;
 }
 
-#about-section,#technical-skills-section,hr,.nav-bar{
+#about-section,#technical-skills-section,hr,.nav-bar,.footer-flex{
   margin-left: 40px;
   margin-right: 40px;
 }
@@ -425,11 +421,36 @@ span>.roadmap-square{
   text-decoration: none;
 }
 
-
-#footer-flex{
-  border: none;
+.footer-flex>hr{
+  border: solid 0.5px #f5efe6;
 }
 
+.footer-flex{
+  text-transform: uppercase;
+}
+
+#footer-section{
+  padding-top: 40px;
+  line-height: 1.5;
+}
+
+.footer-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-flex>h2{
+  text-align: left;
+}
+
+.footer-flex>hr{
+  border: solid 0.5px grey;
+}
+
+.grey-color{
+  color: grey;
+}
 
 /****************************KEYFRAMES*********************************/
 
