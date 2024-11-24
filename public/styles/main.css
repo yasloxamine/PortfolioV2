@@ -93,6 +93,7 @@ img {
   grid-template-columns: 1fr 1fr;
   /*grid-template-columns: minmax(660px,1fr) minmax(600px,1fr);*/
   column-gap: 50px;
+  row-gap: 20px;
 }
 
 .contact-div {
@@ -191,10 +192,6 @@ img {
 
 .grid-column-start-2 {
   grid-column: 2/3;
-}
-
-.grid-column-start-2>hr{
-  border: solid 15px black;
 }
 
 .dotted-effect {
@@ -376,7 +373,7 @@ span>.roadmap-square{
   width: 60%;
 }
 
-.about-div>.rectangle,.experience-div>.quicksand>p,.project-flex>p,.project-flex-black>p{
+.about-div>.rectangle,.experience-div>.quicksand>p,.project-grid>p,.project-grid-black>p{
   text-align: justify;
 }
 
@@ -391,33 +388,29 @@ span>.roadmap-square{
 }
 
 
-
-
-.project-flex,.project-flex-black{
-  display: flex;
-  justify-content: space-around;
+.project-grid,.project-grid-black{
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1fr;
   gap: 3%;
   padding: 40px;
 }
 
 
-.project-flex-black,#footer-section{
+.project-grid-black,#footer-section{
   background-color: black;
   color: #f5efe6;
   
 }
 
-.project-flex>p,.project-flex-black>p{
-  width: 40%;
+.project-grid>p,.project-grid-black>p{
   line-height: 1.7;
 }
 
-.project-flex>img,.project-flex-black>img{
-  height: 16rem;
-  width: auto;
+.project-grid>img,.project-grid-black>img{
+  width: 100%;
 }
 
-.project-flex>p>a{
+.project-grid>p>a{
   text-decoration: none;
 }
 
@@ -464,8 +457,10 @@ span>.roadmap-square{
 }
 
 
-
-
-
-
 /****************************MEDIA*********************************/
+
+@media (max-width: 1420px){
+h1{
+  font-size: 4rem;
+}
+}
