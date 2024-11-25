@@ -92,14 +92,13 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /*grid-template-columns: minmax(660px,1fr) minmax(600px,1fr);*/
-  column-gap: 50px;
+  column-gap: 2%;
   row-gap: 20px;
 }
 
 .contact-div {
   text-align: center;
   align-items: center;
-  row-gap: 10px;
 }
 
 .about-div > .contact-div {
@@ -460,7 +459,54 @@ span>.roadmap-square{
 /****************************MEDIA*********************************/
 
 @media (max-width: 1420px){
+
+  .projects-div>.project-grid,.projects-div>.project-grid-black{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .projects-div>.project-grid>img,.projects-div>.project-grid-black>img{
+    grid-column:  span 2;
+  }
+
+  .contact-div{
+    padding: 20px;
+  }
+
 h1{
   font-size: 4rem;
 }
 }
+
+@media (max-width: 1230px) {
+  .contact-div{
+grid-template-columns: 1fr;
+row-gap: 10px;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  .grid-item-content>h2{
+    font-size: 2.5rem;
+  }
+
+  .grid-item-content>.subtitle-text{
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 1050px){
+  h1{
+    font-size: 2rem;
+  }
+.grid-item-content>h2{
+  font-size: 2rem;
+}
+.grid-item-content>.subtitle-text{
+  font-size: 1rem;
+}
+
+}
+
+
