@@ -509,4 +509,27 @@ row-gap: 10px;
 
 }
 
+@media (max-width: 870px){
+
+  #experience-section,#education-section,#project-section,.header-bar{
+    margin: 20px 20px 0;
+  }
+  
+  #about-section,#technical-skills-section,hr,.nav-bar,.footer-flex{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #h1-div{
+    width: 250px;
+    padding: 0;
+  }
+
+  .nav-bar{
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+}
+
 
