@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
 });
 
 // Export the app for Vercel
-//export default app; //for vercel deployment
+export default app; //for vercel deployment
 
 
 //listening to the declared port locally
