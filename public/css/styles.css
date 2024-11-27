@@ -545,6 +545,14 @@ row-gap: 10px;
     row-gap: 40px;
   }
 
+  .about-div{
+    grid-template-columns: 1fr;
+  }
+
+  .about-div>.grid-item-content{
+    padding: 40px;
+  }
+
 }
 
 
