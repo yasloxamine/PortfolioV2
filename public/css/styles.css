@@ -540,6 +540,11 @@ row-gap: 10px;
     gap: 30px;
   }
 
+  .experience-div{
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
 }
 
 
