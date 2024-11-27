@@ -221,12 +221,12 @@ img {
 }
 
 .roadmap-square{
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   background-color: #f5efe6;
   border: solid 1px black;
   position: relative;
-  bottom: 23px;
+  bottom: 35px;
   padding: 5px;
   border-radius: 0.5rem;
   transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
@@ -275,7 +275,7 @@ img {
 }
 
 #technical-skills-section>hr{
-  margin: 40px 220px 0px 200px;
+  margin: 40px 16% 0px 14%;
 }
 
 #technical-skills-section>.subtitle-text,#footer-section{
@@ -483,6 +483,12 @@ span>.roadmap-square{
   font-size: 3.5rem;
 }
 
+.roadmap-square{
+  width: 60px;
+  height: 60px;
+  bottom: 35px;
+}
+
 }
 
 @media (max-width: 1420px){
@@ -504,6 +510,12 @@ span>.roadmap-square{
     padding: 20px;
   }
 
+  .roadmap-square{
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+  }
+
 }
 
 @media (max-width: 1230px) {
@@ -523,6 +535,12 @@ row-gap: 10px;
     margin: 20px 0;
   }
 
+  .roadmap-square{
+    width: 40px;
+    height: 40px;
+    bottom: 25px;
+  }
+
 
 }
 
@@ -537,6 +555,18 @@ row-gap: 10px;
   font-size: 1rem;
 }
 
+.roadmap{
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+}
+
+@media (max-width: 990px){
+  .roadmap{
+    margin-left: 20px;
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 870px){
@@ -572,6 +602,11 @@ row-gap: 10px;
     padding: 40px;
   }
 
+  .roadmap{
+    margin-left: 32px;
+    margin-right: 0px;
+  }
+
 }
 
 @media (max-width: 680px){
@@ -580,6 +615,19 @@ row-gap: 10px;
   grid-template-rows: 1fr 0.5fr;
   
   row-gap: 20px;
+}
+
+.header-bar>.medium-width-square,.header-bar>.small-width-square{
+  height: 100px;
+  width: 100px;
+}
+
+.header-bar>.medium-width-square>img{
+  height: 100%;
+}
+
+.header-bar>.small-width-square>p{
+  font-size: 0.7rem;
 }
 
 .header-bar>div:nth-of-type(2){
@@ -592,6 +640,24 @@ row-gap: 10px;
   .header-bar{
     column-gap: 10px;
   }
+
+  #experience-section,#education-section,#project-section,.header-bar{
+    margin: 5px 5px 0;
+  }
+  
+  #about-section,#technical-skills-section,hr,.nav-bar,.footer-flex{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .about-div>.grid-item-content,.about-div>div:nth-of-type(3),#technical-skills-section>.rectangle{
+    padding: 20px;
+  }
+
+  #technical-skills-section>.rectangle>h2{
+    font-size: 2rem;
+  }
+
 }
 
 
