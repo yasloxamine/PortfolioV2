@@ -283,7 +283,7 @@ img {
   margin: 40px 0px 0px;
 }
 
-#technical-skills-section .rectangle:nth-of-type(4){
+#technical-skills-section>div:nth-of-type(3){
   margin: 20px 10% 40px;
   padding: 40px;
 height: 10px;
@@ -326,17 +326,10 @@ span>.roadmap-square{
 
 .experience-div{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 50px;
-  row-gap: 20px;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 40px;
   margin-top: 40px;
   line-height: 1.5;
-}
-
-.experience-div>div>p>img{
-  width: 300px;
-  float: left;
-  margin: 10px 10px 0 0;
 }
 
 
@@ -517,6 +510,15 @@ span>.roadmap-square{
     bottom: 30px;
   }
 
+  .experience-div{
+    grid-template-columns: 1fr 0.5fr;
+    row-gap: 40px;
+  }
+
+  .experience-div img{
+    align-self: end;
+  }
+
 }
 
 @media (max-width: 1230px) {
@@ -599,11 +601,6 @@ row-gap: 10px;
     gap: 30px;
   }
 
-  .experience-div{
-    grid-template-columns: 1fr;
-    row-gap: 40px;
-  }
-
   .about-div{
     grid-template-columns: 1fr;
   }
@@ -629,6 +626,18 @@ row-gap: 10px;
 
   #technical-skills-section>#roadmap-div>hr{
     margin-right: 80px;
+  }
+
+  .marquee span {
+    animation: scrollText 30s linear infinite; /* Apply the animation */
+  }
+
+  .experience-div{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .experience-div img{
+    align-self: end;
   }
 
 }
@@ -695,6 +704,17 @@ row-gap: 10px;
   margin-left: 180px;
 }
 
+.experience-div{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.5fr 1 0.5fr;
+}
+
+.experience-div .quicksand{
+    align-content: center;
+    border: solid 0.5px black;
+    padding: 40px;
+}
+
 }
 
 
@@ -716,9 +736,13 @@ row-gap: 10px;
     padding: 20px;
   }
 
-  #technical-skills-section>.rectangle>h2{
+  #technical-skills-section>.rectangle>h2,#experience-section h2,#education-section h2,#project-section h2{
     font-size: 2rem;
   }
+
+  .experience-div .quicksand{
+    padding: 20px;
+}
 
 }
 
