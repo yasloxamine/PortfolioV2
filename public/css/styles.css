@@ -454,6 +454,28 @@ span>.roadmap-square{
   color: grey;
 }
 
+.whatsapp-btn{
+  background-color: rgb(153, 0, 0);
+  position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #f5efe6;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    z-index: 1000;
+}
+
+.whatsapp-btn>svg{
+  width: 80%;
+  height: 80%;
+}
+
 /****************************KEYFRAMES********************************/
 
 @keyframes scrollText {
