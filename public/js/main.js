@@ -9,3 +9,5 @@ var typed = new Typed('#animatedSubtitleTyping', {
     
   });
 
+
+
