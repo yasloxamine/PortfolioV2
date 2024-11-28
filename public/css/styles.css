@@ -257,7 +257,7 @@ img {
   width: 50px;
   opacity: 0;
   position: absolute;
-  bottom: 55px;
+  bottom: 72px;
   font-size: 12px;
   transition: opacity 0.3s;
 }
@@ -518,6 +518,10 @@ span>.roadmap-square{
   .experience-div img{
     align-self: end;
   }
+  
+  .hover-skill-text{
+    bottom: 62px;
+  }
 
 }
 
@@ -548,6 +552,9 @@ row-gap: 10px;
     margin-top: 0px;
   }
 
+  .hover-skill-text{
+    bottom: 52px;
+  }
 
 }
 
@@ -579,15 +586,26 @@ row-gap: 10px;
     margin-right: 100px;
   }
 
+  #education-section>div:nth-of-type(2){
+    flex-direction: column;
+  }
+
+  #education-section>div:nth-of-type(2)>.sliding-img-container{
+    width: 60%;
+    align-self: center;
+    border: solid 0.5px black;
+    padding: 20px;
+  }
+
 }
 
 @media (max-width: 870px){
 
-  #experience-section,#education-section,#project-section,.header-bar{
+  #experience-section,#project-section,.header-bar{
     margin: 20px 20px 0;
   }
   
-  #about-section,#technical-skills-section,hr,.nav-bar,.footer-flex{
+  #about-section,#technical-skills-section,#education-section,hr,.nav-bar,.footer-flex{
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -638,6 +656,14 @@ row-gap: 10px;
 
   .experience-div img{
     align-self: end;
+  }
+
+  .hover-skill-text{
+    bottom: 42px;
+  }
+
+  #education-section>div:nth-of-type(2)>.sliding-img-container{
+    width: 70%;
   }
 
 }
@@ -713,6 +739,10 @@ row-gap: 10px;
     align-content: center;
     border: solid 0.5px black;
     padding: 40px;
+}
+
+#education-section>div:nth-of-type(2)>.sliding-img-container{
+  width: 80%;
 }
 
 }
