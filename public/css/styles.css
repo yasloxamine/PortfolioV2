@@ -515,7 +515,7 @@ span>.roadmap-square{
 
   .projects-div>.project-grid,.projects-div>.project-grid-black{
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-auto-rows: auto;
   }
 
   .projects-div>.project-grid>img,.projects-div>.project-grid-black>img{
@@ -619,15 +619,28 @@ row-gap: 10px;
     padding: 20px;
   }
 
+  .project-grid,.project-grid-black{
+
+    grid-auto-rows: auto;
+  }
+
+  .project-grid>p,.project-grid-black>p{
+    grid-column: span 2;
+  }
+
+  .projects-div>div:nth-of-type(3){
+    padding-bottom: 100px;
+  }
+
 }
 
 @media (max-width: 870px){
 
-  #experience-section,#project-section,.header-bar{
+  #experience-section,.header-bar{
     margin: 20px 20px 0;
   }
   
-  #about-section,#technical-skills-section,#education-section,hr,.nav-bar,.footer-flex{
+  #about-section,#technical-skills-section,#project-section,#education-section,hr,.nav-bar,.footer-flex{
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -769,32 +782,53 @@ row-gap: 10px;
 
 }
 
+@media (max-width: 530px){
+  .projects-div{
+   padding: 20px;
+  }
+
+  #project-section{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .projects-div{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .project-grid,.project-grid-black{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .projects-div>hr:nth-of-type(1){
+    display: none;
+  }
+}
+
 
 @media (max-width: 430px){
   .header-bar{
     column-gap: 10px;
   }
 
-  #experience-section,#education-section,#project-section,.header-bar{
+  #experience-section,.header-bar{
     margin: 5px 5px 0;
   }
   
-  #about-section,#technical-skills-section,hr,.nav-bar,.footer-flex{
+  #about-section,#technical-skills-section,#education-section,hr,.nav-bar,.footer-flex{
     margin-left: 5px;
     margin-right: 5px;
   }
   
-  .about-div>.grid-item-content,.about-div>div:nth-of-type(3),#technical-skills-section>.rectangle{
+  .about-div>.grid-item-content,.about-div>div:nth-of-type(3),#technical-skills-section>.rectangle,.experience-div .quicksand{
     padding: 20px;
   }
 
   #technical-skills-section>.rectangle>h2,#experience-section h2,#education-section h2,#project-section h2{
     font-size: 2rem;
   }
-
-  .experience-div .quicksand{
-    padding: 20px;
-}
 
 }
 
