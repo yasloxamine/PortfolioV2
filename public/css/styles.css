@@ -276,7 +276,7 @@ img {
 }
 
 #technical-skills-section>#roadmap-div>hr{
-  margin: 40px 16% 0px 14%;
+  margin: 20px 16% 0px 14%;
 }
 
 #technical-skills-section>.subtitle-text,#footer-section{
@@ -542,6 +542,10 @@ row-gap: 10px;
     bottom: 25px;
   }
 
+  #technical-skills-section>#roadmap-div>hr{
+    margin-top: 0px;
+  }
+
 
 }
 
@@ -568,6 +572,11 @@ row-gap: 10px;
     margin-left: 20px;
     margin-right: 0px;
   }
+
+  #technical-skills-section>#roadmap-div>hr{
+    margin-right: 100px;
+  }
+
 }
 
 @media (max-width: 870px){
@@ -612,6 +621,14 @@ row-gap: 10px;
     width: 30px;
     height: 30px;
     bottom: 19px;
+  }
+
+  #technical-skills-section>div>div:nth-of-type(1){
+    margin-top: 50px;
+  }
+
+  #technical-skills-section>#roadmap-div>hr{
+    margin-right: 80px;
   }
 
 }
@@ -666,6 +683,16 @@ row-gap: 10px;
 
 #roadmap-div::-webkit-scrollbar-thumb:hover {
   background-color: #555; /* Scrollbar color on hover */
+}
+
+#technical-skills-section>#roadmap-div>hr{
+  width: 590px;
+  margin-right: 0px;
+  margin-left: 140px;
+}
+
+#technical-skills-section>#roadmap-div>p:nth-of-type(1){
+  margin-left: 180px;
 }
 
 }
