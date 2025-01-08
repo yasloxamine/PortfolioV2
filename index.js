@@ -1,6 +1,5 @@
 // Import express, axios, and body-parser modules
 import express from "express";
-import axios from "axios";
 import bodyParser from "body-parser";
 import path from "path";
 import { fileURLToPath } from "url";

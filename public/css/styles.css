@@ -276,7 +276,7 @@ img {
 }
 
 #technical-skills-section>#roadmap-div>hr{
-  margin: 20px 23% 0px 11%;
+  margin: 20px 30% 0px 11%;
 }
 
 #technical-skills-section>.subtitle-text,#footer-section{
@@ -610,7 +610,7 @@ row-gap: 10px;
 
   #technical-skills-section>#roadmap-div>hr{
     margin-left: 13%;
-    margin-right: 17%;
+    margin-right: 25%;
   }
 
   #education-section>div:nth-of-type(2){
