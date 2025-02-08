@@ -4,6 +4,8 @@ import bodyParser from "body-parser";
 import path from "path";
 import { fileURLToPath } from "url";
 
+import { track } from "@vercel/analytics/server"; // Import Vercel Analytics
+
 // Resolve __dirname for ES Modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -26,6 +28,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Define the home route
 app.get("/", (req, res) => {
+  track("pageview"); // Track when the homepage is accessed
   res.render("index");
 });
 

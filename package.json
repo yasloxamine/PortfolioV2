@@ -11,6 +11,7 @@
   "author": "Mohamed Amine Yaslo",
   "license": "ISC",
   "dependencies": {
+    "@vercel/analytics": "^1.4.1",
     "axios": "^1.7.7",
     "body-parser": "^1.20.3",
     "ejs": "^3.1.10",
