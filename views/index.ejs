@@ -43,6 +43,10 @@
 
      <%# including the education section from the projectSection.ejs in partials folder %>
      <%- include("partials/projectSection") %>
+    
+     <%# including lightbox for handling the projects images modal %>
+     <%- include('partials/lightbox') %>
+
 
      <%# whatsapp integration %>
      <a class="custom-link quicksand whatsapp-btn"
@@ -56,11 +60,14 @@
 </a>
 
 
+
+
     <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script type="module" src="/js/main.js"></script>
-    <!-- Link to the frontend JavaScript -->
+    <script src="/js/lightbox.js"></script>
+    <!-- Link to the frontend JavaScript files -->
   </body>
 <footer>
   <%- include("partials/footer.ejs") %>

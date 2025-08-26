@@ -1,133 +1,280 @@
 <section id="project-section">
-
-  
-    <%# flexbox div container in vertical direction that will contain projects %>
-    <div class="projects-div rectangle quicksand">
-    
-        <div class="playfair-display">
-<h2>PROJECTS</h2>
-        </div>
-
-        <hr>
-        <%# project 0 %>
-        <div class="project-grid-black">
-             
-                <p><strong class="red-color">KHADDAM,</strong> a mobile app that connects users with nearby skilled service providers such as plumbers, electricians, painters, and more. This app is built using React Native, Node.js, Express, PostgreSQL, and UI Kitten for the UI. Working on this project helped me strengthen my skills in mobile development, secure authentication with JWT, and RESTful API integration.
-                </p>
-
-                <p>
-                        The app supports real-time user login and registration, persistent sessions using AsyncStorage, and a dynamic bottom navigation bar that adjusts based on authentication status. I also implemented custom theming with UI Kitten and integrated a PostgreSQL database for user management.
-                        I am currently developing this app with the goal of turning it into a scalable solution for local service marketplaces.
-                        </p>
-                
-
-
-                <img src="/images/projectsImages/KhaddamAppPreview.png" alt="">
-                    
-
-        </div>
-<hr>
-
-        <%# project 1 %>
-        <div class="project-grid">
-             
-                <p><strong class="red-color">DEAL HEAL,</strong> a small web app that provides users with real-time deals on
-                     Steam games. This app is built using Node.js, EJS, JavaScript, Express, and the CheapShark public API. 
-                     Developing this web app allowed me to enhance my knowledge of REST APIs by implementing the one provided by 
-                     CheapShark.
-                </p>
-
-                <p>
-                    The API provides real-time data about Steam games currently on discount. The source code for this project is available 
-                    <a class="red-color" target="_blank" href="https://github.com/yasloxamine/DealHeal"><code>`click here to access the GitHub repository`</code> </a> Additionally, I deployed the app for testing purposes using OnRender, <a class="red-color" target="_blank" href="https://dealheal.onrender.com"><code>`Link.`</code></a>
-                        </p>
-                
-
-
-                <img src="/images/projectsImages/dealhealPreview.png" alt="">
-                    
-
-        </div>
-<hr>
-        <%# project 2 %>
-        <div class="project-grid-black">
-
-
-
-            <p><strong class="red-color">MOROCCAN HORROR GAME,</strong> This is a work-in-progress game created using 
-                the Unity Engine for development, Blender for 3D modeling, C# for game logic, ambientCG for materials and textures, 
-                and ZapSplat along with Audacity for sound effects and music. I am currently developing this project as a hobby to 
-                gain experience as a coder, designer, and 3D artist.
-                Through this process, I’m implementing Object-Oriented Programming (OOP) principles in C# and adhering to good coding 
-                practices, which contribute to improved game performance and optimization.
-           </p>
-
-           <p>
-            The concept for this project is inspired by a nightmare I once had. While I don’t remember the details or the ending of 
-            the dream, I’m attempting to bring it to life as a 3D Moroccan horror game. Hopefully, I’ll give it a happy ending, something 
-            I didn’t have in the dream.
-            Currently, there is no online demo available yet.
-                   </p>
-
-
-           <img src="/images/projectsImages/moroccanhorrorgame.gif" alt="">
-
-
-        </div>
-<hr>
-        <%# project 3 %>
-        <div class="project-grid">
-          
-                <p><strong class="red-color">SIMON GAME,</strong> This is a mini-project created to apply the knowledge I acquired during the early stages of learning HTML, CSS, 
-                    and JavaScript. It was developed as part of an online web development course that I’m currently following. 
-                    Here’s the link to the course, <a class="red-color" target="_blank" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/39461828?start=255"><code>`click here`</code></a></p>
-
-                <p>
-                    The project is a recreation of the famous SIMON Game and is currently hosted on GitHub.
-                    If you’d like to try it, <a class="red-color" target="_blank" href="https://yasloxamine.github.io/SimonGame/"><code>`click here`</code></a>, 
-                    To access the source code, <a class="red-color" target="_blank" href="https://github.com/yasloxamine/SimonGame"><code>`click here`</code></a>
-                </p>
-
-
-                <img src="/images/projectsImages/simongame.png" alt="">
-            
-                        
-
-            
-
-        </div>
-<hr>
-        <%# project 4 %>
-        
-        <div class="project-grid-black">
-
-
-
-            <p>
-                <strong class="red-color">ROCKET PROJECT,</strong>
-                This rocket game is also a work in progress, and I’m planning to submit it to an upcoming Moroccan Game Dev Jam. 
-                I’ll redesign it to fit the chosen theme for the event.</p>
-
-
-            <p>
-                The game is designed for mobile platforms and has been successfully tested on an Android Samsung phone, 
-                with excellent frame rate performance. It was built using the same technologies as my Moroccan horror game. 
-                Working on this project has significantly enhanced my overall knowledge of mobile game development.
-            </p>
-
-
-
-            <img src="/images/projectsImages/rocketgame.gif" alt="">
-
-
+  <%# flexbox div container in vertical direction that will contain projects %>
+  <div class="projects-div rectangle quicksand">
+    <div class="playfair-display">
+      <h2>PROJECTS</h2>
     </div>
 
+    <hr />
+    <%# project 0 %>
+    <div class="project-grid-black">
+      <p>
+        <strong class="red-color">KHADDAM,</strong> a mobile app that connects
+        users with nearby skilled service providers such as plumbers,
+        electricians, painters, and more. This app is built using React Native,
+        Node.js, Express, PostgreSQL, and UI Kitten for the UI. Working on this
+        project helped me strengthen my skills in mobile development, secure
+        authentication with JWT, and RESTful API integration.
+      </p>
 
-     <hr>
+      <p>
+        The app supports real-time user login and registration, persistent
+        sessions using AsyncStorage, and a dynamic bottom navigation bar that
+        adjusts based on authentication status. I also implemented custom
+        theming with UI Kitten and integrated a PostgreSQL database for user
+        management. I am currently developing this app with the goal of turning
+        it into a scalable solution for local service marketplaces.
+      </p>
+
+      <div class="zoomable" data-zoom-hint="Click to view">
+        <img
+          src="/images/projectsImages/KhaddamAppPreview.png"
+          alt="KHADDAM app – main preview"
+          class="gallery-trigger"
+          data-caption="KHADDAM — Mobile marketplace app"
+          data-images="<%= encodeURIComponent(JSON.stringify([
+      '/images/projectsImages/KhaddamAppPreview.png',
+      '/images/projectsImages/KhaddamLogin.png',
+      '/images/projectsImages/KhaddamProfile.png'
+    ])) %>"
+        />
+        <span class="zoomable-badge" aria-hidden="true">
+          <!-- magnifier with plus icon -->
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+          </svg>
+        </span>
+      </div>
+    </div>
+
+    <hr />
+
+    <%# project 1 %>
+    <div class="project-grid">
+      <p>
+        <strong class="red-color">DEAL HEAL,</strong> a small web app that
+        provides users with real-time deals on Steam games. This app is built
+        using Node.js, EJS, JavaScript, Express, and the CheapShark public API.
+        Developing this web app allowed me to enhance my knowledge of REST APIs
+        by implementing the one provided by CheapShark.
+      </p>
+
+      <p>
+        The API provides real-time data about Steam games currently on discount.
+        The source code for this project is available
+        <a
+          class="red-color"
+          target="_blank"
+          href="https://github.com/yasloxamine/DealHeal"
+          ><code>`click here to access the GitHub repository`</code>
+        </a>
+        Additionally, I deployed the app for testing purposes using OnRender,
+        <a
+          class="red-color"
+          target="_blank"
+          href="https://dealheal.onrender.com"
+          ><code>`Link.`</code></a
+        >
+      </p>
+
+      <div class="zoomable" data-zoom-hint="Click to view">
+        <img
+          src="/images/projectsImages/dealhealPreview.png"
+          alt="KHADDAM app – main preview"
+          class="gallery-trigger"
+          data-caption="KHADDAM — Mobile marketplace app"
+          data-images="<%= encodeURIComponent(JSON.stringify([
+      '/images/projectsImages/dealhealPreview.png',
+      '/images/projectsImages/KhaddamLogin.png',
+      '/images/projectsImages/KhaddamProfile.png'
+    ])) %>"
+        />
+        <span class="zoomable-badge" aria-hidden="true">
+          <!-- magnifier with plus icon -->
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <hr />
+    <%# project 2 %>
+    <div class="project-grid-black">
+      <p>
+        <strong class="red-color">MOROCCAN HORROR GAME,</strong> This is a
+        work-in-progress game created using the Unity Engine for development,
+        Blender for 3D modeling, C# for game logic, ambientCG for materials and
+        textures, and ZapSplat along with Audacity for sound effects and music.
+        I am currently developing this project as a hobby to gain experience as
+        a coder, designer, and 3D artist. Through this process, I’m implementing
+        Object-Oriented Programming (OOP) principles in C# and adhering to good
+        coding practices, which contribute to improved game performance and
+        optimization.
+      </p>
+
+      <p>
+        The concept for this project is inspired by a nightmare I once had.
+        While I don’t remember the details or the ending of the dream, I’m
+        attempting to bring it to life as a 3D Moroccan horror game. Hopefully,
+        I’ll give it a happy ending, something I didn’t have in the dream.
+        Currently, there is no online demo available yet.
+      </p>
+
+      <div class="zoomable" data-zoom-hint="Click to view">
+        <img
+          src="/images/projectsImages/moroccanhorrorgame.gif"
+          alt="KHADDAM app – main preview"
+          class="gallery-trigger"
+          data-caption="KHADDAM — Mobile marketplace app"
+          data-images="<%= encodeURIComponent(JSON.stringify([
+      '/images/projectsImages/moroccanhorrorgame.gif',
+      '/images/projectsImages/KhaddamLogin.png',
+      '/images/projectsImages/KhaddamProfile.png'
+    ])) %>"
+        />
+        <span class="zoomable-badge" aria-hidden="true">
+          <!-- magnifier with plus icon -->
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <hr />
+    <%# project 3 %>
+    <div class="project-grid">
+      <p>
+        <strong class="red-color">SIMON GAME,</strong> This is a mini-project
+        created to apply the knowledge I acquired during the early stages of
+        learning HTML, CSS, and JavaScript. It was developed as part of an
+        online web development course that I’m currently following. Here’s the
+        link to the course,
+        <a
+          class="red-color"
+          target="_blank"
+          href="https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/39461828?start=255"
+          ><code>`click here`</code></a
+        >
+      </p>
+
+      <p>
+        The project is a recreation of the famous SIMON Game and is currently
+        hosted on GitHub. If you’d like to try it,
+        <a
+          class="red-color"
+          target="_blank"
+          href="https://yasloxamine.github.io/SimonGame/"
+          ><code>`click here`</code></a
+        >, To access the source code,
+        <a
+          class="red-color"
+          target="_blank"
+          href="https://github.com/yasloxamine/SimonGame"
+          ><code>`click here`</code></a
+        >
+      </p>
+
+      <div class="zoomable" data-zoom-hint="Click to view">
+        <img
+          src="/images/projectsImages/simongame.png"
+          alt="KHADDAM app – main preview"
+          class="gallery-trigger"
+          data-caption="KHADDAM — Mobile marketplace app"
+          data-images="<%= encodeURIComponent(JSON.stringify([
+      '/images/projectsImages/simongame.png',
+      '/images/projectsImages/KhaddamLogin.png',
+      '/images/projectsImages/KhaddamProfile.png'
+    ])) %>"
+        />
+        <span class="zoomable-badge" aria-hidden="true">
+          <!-- magnifier with plus icon -->
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <hr />
+    <%# project 4 %>
+
+    <div class="project-grid-black">
+      <p>
+        <strong class="red-color">ROCKET PROJECT,</strong>
+        This rocket game is also a work in progress, and I’m planning to submit
+        it to an upcoming Moroccan Game Dev Jam. I’ll redesign it to fit the
+        chosen theme for the event.
+      </p>
+
+      <p>
+        The game is designed for mobile platforms and has been successfully
+        tested on an Android Samsung phone, with excellent frame rate
+        performance. It was built using the same technologies as my Moroccan
+        horror game. Working on this project has significantly enhanced my
+        overall knowledge of mobile game development.
+      </p>
+
+      <div class="zoomable" data-zoom-hint="Click to view">
+        <img
+          src="/images/projectsImages/rocketgame.gif"
+          alt="KHADDAM app – main preview"
+          class="gallery-trigger"
+          data-caption="KHADDAM — Mobile marketplace app"
+          data-images="<%= encodeURIComponent(JSON.stringify([
+      '/images/projectsImages/rocketgame.gif',
+      '/images/projectsImages/KhaddamLogin.png',
+      '/images/projectsImages/KhaddamProfile.png'
+    ])) %>"
+        />
+        <span class="zoomable-badge" aria-hidden="true">
+          <!-- magnifier with plus icon -->
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+          </svg>
+        </span>
+      </div>
+    </div>
+
+    <hr />
     <code>more projects coming soon...</code>
-
-    </div>
-
-
-
+  </div>
 </section>
