@@ -328,8 +328,10 @@ span>.roadmap-square{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   column-gap: 40px;
+  row-gap: 80px;
   margin-top: 40px;
   line-height: 1.5;
+  
 }
 
 
